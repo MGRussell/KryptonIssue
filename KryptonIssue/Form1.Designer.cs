@@ -34,6 +34,12 @@
             this.emptyPage = new ComponentFactory.Krypton.Navigator.KryptonPage();
             this.glControlPage = new ComponentFactory.Krypton.Navigator.KryptonPage();
             this.simpleGLControl1 = new KryptonIssue.SimpleGLControl();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.formsGDIPage = new System.Windows.Forms.TabPage();
+            this.formsEmptyPage = new System.Windows.Forms.TabPage();
+            this.formsGLControlPage = new System.Windows.Forms.TabPage();
+            this.simpleGLControl2 = new KryptonIssue.SimpleGLControl();
+            this.simpleGDIControl1 = new KryptonIssue.SimpleGDIControl();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonNavigator1)).BeginInit();
             this.kryptonNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gdiPage)).BeginInit();
@@ -41,6 +47,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.emptyPage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.glControlPage)).BeginInit();
             this.glControlPage.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.formsGDIPage.SuspendLayout();
+            this.formsGLControlPage.SuspendLayout();
             this.SuspendLayout();
             // 
             // kryptonNavigator1
@@ -111,11 +120,72 @@
             this.simpleGLControl1.TabIndex = 1;
             this.simpleGLControl1.VSync = false;
             // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.formsGDIPage);
+            this.tabControl1.Controls.Add(this.formsEmptyPage);
+            this.tabControl1.Controls.Add(this.formsGLControlPage);
+            this.tabControl1.Location = new System.Drawing.Point(392, 27);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(349, 270);
+            this.tabControl1.TabIndex = 1;
+            // 
+            // formsGDIPage
+            // 
+            this.formsGDIPage.Controls.Add(this.simpleGDIControl1);
+            this.formsGDIPage.Location = new System.Drawing.Point(4, 22);
+            this.formsGDIPage.Name = "formsGDIPage";
+            this.formsGDIPage.Padding = new System.Windows.Forms.Padding(3);
+            this.formsGDIPage.Size = new System.Drawing.Size(341, 244);
+            this.formsGDIPage.TabIndex = 0;
+            this.formsGDIPage.Text = "GDI";
+            this.formsGDIPage.UseVisualStyleBackColor = true;
+            // 
+            // formsEmptyPage
+            // 
+            this.formsEmptyPage.Location = new System.Drawing.Point(4, 22);
+            this.formsEmptyPage.Name = "formsEmptyPage";
+            this.formsEmptyPage.Padding = new System.Windows.Forms.Padding(3);
+            this.formsEmptyPage.Size = new System.Drawing.Size(341, 244);
+            this.formsEmptyPage.TabIndex = 1;
+            this.formsEmptyPage.Text = "Empty";
+            this.formsEmptyPage.UseVisualStyleBackColor = true;
+            // 
+            // formsGLControlPage
+            // 
+            this.formsGLControlPage.Controls.Add(this.simpleGLControl2);
+            this.formsGLControlPage.Location = new System.Drawing.Point(4, 22);
+            this.formsGLControlPage.Name = "formsGLControlPage";
+            this.formsGLControlPage.Padding = new System.Windows.Forms.Padding(3);
+            this.formsGLControlPage.Size = new System.Drawing.Size(341, 244);
+            this.formsGLControlPage.TabIndex = 2;
+            this.formsGLControlPage.Text = "GLControl";
+            this.formsGLControlPage.UseVisualStyleBackColor = true;
+            // 
+            // simpleGLControl2
+            // 
+            this.simpleGLControl2.BackColor = System.Drawing.Color.Black;
+            this.simpleGLControl2.Location = new System.Drawing.Point(95, 47);
+            this.simpleGLControl2.Name = "simpleGLControl2";
+            this.simpleGLControl2.Size = new System.Drawing.Size(150, 150);
+            this.simpleGLControl2.TabIndex = 2;
+            this.simpleGLControl2.VSync = false;
+            // 
+            // simpleGDIControl1
+            // 
+            this.simpleGDIControl1.Location = new System.Drawing.Point(18, 10);
+            this.simpleGDIControl1.Name = "simpleGDIControl1";
+            this.simpleGDIControl1.Size = new System.Drawing.Size(305, 224);
+            this.simpleGDIControl1.TabIndex = 2;
+            this.simpleGDIControl1.Text = "simpleGDIControl1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(384, 322);
+            this.ClientSize = new System.Drawing.Size(767, 322);
+            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.kryptonNavigator1);
             this.Name = "Form1";
             this.Text = "GLIssue Example";
@@ -126,6 +196,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.emptyPage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.glControlPage)).EndInit();
             this.glControlPage.ResumeLayout(false);
+            this.tabControl1.ResumeLayout(false);
+            this.formsGDIPage.ResumeLayout(false);
+            this.formsGLControlPage.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -138,6 +211,12 @@
         private ComponentFactory.Krypton.Navigator.KryptonPage glControlPage;
         private SimpleGDIControl simpleGDIControl2;
         private SimpleGLControl simpleGLControl1;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage formsGDIPage;
+        private System.Windows.Forms.TabPage formsEmptyPage;
+        private System.Windows.Forms.TabPage formsGLControlPage;
+        private SimpleGDIControl simpleGDIControl1;
+        private SimpleGLControl simpleGLControl2;
     }
 }
 
